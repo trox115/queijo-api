@@ -1,0 +1,2 @@
+module QueijosHelper
+end

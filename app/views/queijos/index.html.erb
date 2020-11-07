@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Queijos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tamanho</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @queijos.each do |queijo| %>
+      <tr>
+        <td><%= queijo.nome %></td>
+        <td><%= queijo.tamanho %></td>
+        <td><%= link_to 'Show', queijo %></td>
+        <td><%= link_to 'Edit', edit_queijo_path(queijo) %></td>
+        <td><%= link_to 'Destroy', queijo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Queijo', new_queijo_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @queijo.nome %>
+</p>
+
+<p>
+  <strong>Tamanho:</strong>
+  <%= @queijo.tamanho %>
+</p>
+
+<%= link_to 'Edit', edit_queijo_path(@queijo) %> |
+<%= link_to 'Back', queijos_path %>
